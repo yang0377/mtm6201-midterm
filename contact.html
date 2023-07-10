@@ -8,6 +8,102 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <img src="images/header-icon.png" alt="language icon">
+            <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            <img src="images/logo-nav.png" alt="clinnipets logo-nav">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div>
+            <h1>Clinnepets</h1>
+            <p>555-555-5555</p>
+            <p>616 Raindrop St, Riverside,
+                Ottawa, Ontario</p>
+            <p>MON-SUN:
+                10: 00 am - 10: 00 pm</p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044936!2d-75.75712548465943!3d45.34993154908222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1680820783604!5m2!1szh-CN!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div>
+        <button>BOOK AN APPOINTMENT</button>
+        <button>Online</button>
+        <button>In Person</button>
+    </div>
+    <div>
+        <p>Please use this form to send us an email. Please do not use this form for urgent matters. If you require immediate attention or have an emergency, please call us.</p>
+        <form action="thanks.html" method="post" class="contactform">
+            <label for="firstname">First Name</label>
+            <input type="text"  name="firstname" id="firstname" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required>
+
+            <label for="help">What can we help you with?</label>
+            <select id="help" name="help">
+                <option value="regularexam">Regular Exam</option>
+                <option value="emergency">Emergency</option>
+                <option value="otherissues">Other Issues</option>
+              </select>
+
+            <label for="emailaddress">Email Address</label>
+            <input type="text" name="emailaddress" id="emailaddress">
+
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone">
+
+            <label for="waytocontact">How would you like us to contact you?</label>
+            <select name="waytocontact" id="waytocontact">
+                <option value="contactemail">Email</option>
+                <option value="contactphone">Phone</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </form>
+        <p>We respect your privacy and will not share your information with other parties. For more information, see the VCA Canada Privacy Policy.</p>
+        <div>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+    <div>
+        <h3>Connect With Us</h3>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <div>
+            <ul>
+                <li>Our Services</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>Appointments</li>
+                <li>Emergency Form</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Copyright Clinnepets all rights reserved.</p>
+        <nav>
+            <ul>
+                <li>Cookie Notice</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>Text Appts</li>
+                <li>Web Accessibility</li>
+            </ul>
+        </nav>
+        <img src="images/logo-footer.png" alt="footer logo">
+    </footer>
 </body>
 </html>
