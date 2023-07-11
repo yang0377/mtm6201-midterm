@@ -52,6 +52,7 @@ table {
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    /* color: #6C7C82; */
     background-color: white;
     line-height: 1.5;
 }
@@ -68,5 +69,21 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
 
+:root {
+    --body-color: #778991;
+    --primary-color: #60b5b4;
+    --secondary-color: #F48D6E;
+    --tertiary-color: #FEF8E4;
+    --main-bg-color: #BADBDA;
+    --secondary-bg-color: #E5F3F4;
+}
 
+body p {
+    color: var(--body-color);
+}
