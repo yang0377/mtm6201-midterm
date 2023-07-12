@@ -126,6 +126,22 @@ body p {
     padding: 4px;
 }
 
+.primelogo {
+    width: 30%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-bars {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
 
 
 
