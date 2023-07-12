@@ -258,7 +258,7 @@ label i {
     border-radius: 100%;
     position: absolute;
 }
-
+/* create animation to the play button */
 @keyframes shining {
     0% {
         opacity: .1;
@@ -318,12 +318,12 @@ label i {
 .play-btn::before {
     content: "";
     position: absolute;
-    border: 5px solid #fff;
+    border: 15px solid #fff;
     border-radius: 50%;
-    /* top: -20px; */
-    /* left: -20px; */
-    /* right: -20px; */
-    /* bottom: -20px; */
+    top: -20px; 
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
     animation: bloom1 1.5s linear infinite;
     opacity: 0;
     z-index: 1;
@@ -346,22 +346,21 @@ label i {
 
 .play-btn:hover{
     animation-name: pulse;
-    animation-duration: 1.9s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
 .play-btn:active {
     animation-name: shining;
     animation-duration: 1.9s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 3;
 }
 
 /* style the What We Believe section */
 .believe h1 {
     color: var(--secondary-color);
     text-align: center;
-    margin: 20px 0;
-    font-size: 50px;
+    margin: 30px 0;
 }
 
 .believe .wrapper p {
@@ -388,9 +387,64 @@ label i {
     line-height: 2rem;
 }
 
-/* style the testimonials */
+/* style the testimonials with flex */
+.testimonials {
+    padding: 10px;
+    margin: 20px 0;
+    border-top: 1px solid var(--body-color);
+    border-bottom: 1px solid var(--body-color);
+}
 
+.testimonials h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 30px 0;
+}
 
+.comments {
+    display: flex;
+    flex-direction: row;
+}
+
+.com {
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+}
+
+.comments h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* style the location section */
+.location h1 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.address {
+    justify-content: center;
+    /* align-items: center; */
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.addresstext, img {
+    padding: 20px;
+}
+
+.addresstext img {
+    width: 150px;
+    height: 100px;
+} 
+.location .address .highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+}
 
 
 
