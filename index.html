@@ -32,46 +32,95 @@
             
         </div>
         <!-- navigation list when click the hamburger menu -->
-        <label class="hamburger-menu">
-            <input type="checkbox">
-        </label>
-        <nav class="sidebar">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <!-- <div class="navigation">
+            <label class="hamburger-menu">
+                <input type="checkbox" id="toggler">
+            </label>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> -->
+        <div class="navigation">
+            <label for="toggler"><i class="fa fa-bars"></i></label>
+            <input type="checkbox" id="toggler">
+            
+            <nav>
+                <ul class="list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
 
     <!-- the main content of the page -->
     <div class="cover">
-        <img src="images/home-1.jpg" alt="photo of a woman holding a dog">
-        <p class="wrapper">Where your Pet's Health is Our Top Priority</p>
-    </div>
-    <div>
-        <h2 class="wrapper">We provide exceptional care for your pets</h2>
-        <img src="images/home-2.jpg" alt="photo of a vetarin examing a dog">
+        <div class="homeposter">
+            <img src="images/home-1.jpg" alt="photo of a woman holding a dog"
+            srcset="images/home-1-960_x_638.png 540vw,
+            images/home-1-1920_x_1276.png 720vw"
+            sizes="
+                (min-width: 960px) 720px,100vw"
+            >
+            <div class="wrapper">
+                <p>Where your Pet's Health is Our Top Priority</p>
+                <p></p>
+            </div>
+            
+        </div>
+        <div class="video">
+            <p class="wrapper">We provide exceptional care for your pets</p>
+            <div class="videocard" >
+                <img src="images/home-2.jpg" alt="photo of a vetarin examing a dog"
+                srcset="images/home-2-960_x_638.png 540vw,
+                images/home-2-1920_x_1276.png 720vw"
+                sizes="
+                (min-width: 960px) 720px,100vw"
+                >
+                <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- section of the information of the clinic -->
-    <div>
+    <div class="believe">
         <div class="wrapper">
             <h1>What We Believe</h1>
             <p>At Clinnipets, we understand that pets are family. As pet owners and animal lovers, we provide top-quality care for your furry family members. Trust us with your pet and experience the difference of having a veterinary clinic that truly cares.</p>
-            <p>Pets of registered users can get a free wellness exam and a 50% discount is available when inviting friends.</p>
         </div>
-        <img src="images/home-3.jpg" alt="a photo of a happy dog">
+        <div class="card1">
+            <p>Pets of registered users can get a free wellness exam and a 50% discount is available when inviting friends.</p>
+            <img src="images/home-3.jpg" alt="a photo of a happy dog"
+            srcset="images/home--960_x_638.png 540vw,
+            images/home-3-1920_x_1276.png 720vw"
+            sizes="
+                (min-width: 960px) 720px,100vw"
+            >
+        </div>
     </div>
 
     <!-- customers' feedback -->
-    <div>
+    <div class="testimonials">
         <div class="wrapper">
             <h1>Customers Love Us!</h1>
             <div>
