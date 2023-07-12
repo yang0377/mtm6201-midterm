@@ -86,12 +86,15 @@ h3 {
 
 body p {
     color: var(--body-color);
+    text-align: left;
 }
 
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1200px;
+    justify-content: center;
+    text-align: center;
 }
 
 /* style the navigation */
@@ -117,6 +120,8 @@ body p {
     width: 50%;
     height: 24px;
     border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     margin-right: -4px;
 }
 
@@ -124,10 +129,13 @@ body p {
     background-color: #60B5B4;
     color: white;
     padding: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .primelogo {
-    width: 30%;
+    width: 117px;
+    height: 98px;
 }
 
 .menu {
@@ -159,7 +167,6 @@ body p {
     justify-content: space-between;
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-    /* padding: 1rem; */
     background: var(--secondary-color);
 }
 
@@ -168,7 +175,7 @@ nav a {
     color: white;
 }
 
-nav ul {
+.navigation nav ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
@@ -344,12 +351,13 @@ label i {
     animation-delay: .4s;
 }
 
+/* hover animation */
 .play-btn:hover{
     animation-name: pulse;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
-
+/* active animation */
 .play-btn:active {
     animation-name: shining;
     animation-duration: 1.9s;
@@ -391,8 +399,8 @@ label i {
 .testimonials {
     padding: 10px;
     margin: 20px 0;
-    border-top: 1px solid var(--body-color);
-    border-bottom: 1px solid var(--body-color);
+    /* border-top: 1px solid var(--body-color); */
+    /* border-bottom: 1px solid var(--body-color); */
 }
 
 .testimonials h1 {
@@ -415,7 +423,7 @@ label i {
 }
 
 .comments h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--primary-color);
 }
 
@@ -433,18 +441,122 @@ label i {
     flex-direction: row;
 }
 
-.addresstext, img {
-    padding: 20px;
+.addresstext, .addresstext .footerlogo {
+    /* padding: 20px; */
+    padding-bottom: 0;
 }
 
-.addresstext img {
-    width: 150px;
-    height: 100px;
-} 
+.footerlogo1 {
+    width: 120px;
+    height: 120px;
+    padding-left: 30px;
+    /* padding-bottom: -100px; */
+}
+
 .location .address .highlight {
     color: var(--primary-color);
     font-weight: bold;
 }
+
+iframe {
+    width: 100%;
+}
+
+/* style the appointment section */
+.appointment {
+    background-color: var(--main-bg-color);
+    /* justify-content: center; */
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.appointment button {
+    border: none;
+    border-radius: 9999px;
+
+}
+
+.book button {
+    height: 30px;
+    width: 200px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.waytobook button {
+    height: 30px;
+    background-color: #fff;
+    color: var(--secondary-color);
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+/* style the footer nav */
+.footernav {
+    justify-content: center;
+    text-align: center;
+}
+
+.footernav h3 {
+    color: var(--primary-color);
+}
+
+.sns i {
+    padding: 10px;
+}
+
+.fa-facebook, .fa-square-twitter, .fa-instagram {
+    height: 20px;
+}
+
+.otherlinks {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.otherlinks li {
+    font-size: .8rem;
+    color: var(--body-color);
+    padding: 5px;
+}
+
+.box1, .box2 {
+    padding: 15px;
+}
+
+/* style the footer */
+footer {
+    background-color: var(--main-bg-color);
+}
+footer li {
+    font-size: .6rem;
+    color: var(--body-color);
+}
+
+footer nav li {
+    display: inline;
+    padding: 1px;
+    /* padding-bottom: 0; */
+    text-decoration-line: underline;
+}
+
+.foot {
+    padding: 20px 0;
+    /* padding-bottom: 0; */
+    display: flex;
+}
+
+.foot img {
+    width: 48px;
+    height: 48px;
+    padding-left: 10px;
+}
+
 
 
 

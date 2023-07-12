@@ -15,21 +15,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="wrapper headcontainer">
+    <header class="headcontainer">
         <!-- establish the elements of navigation of the home page -->
         <div class="container">
             <img class="languagebar" src="images/header-icon.png" alt="language icon">
-            <div class="searchbar">
-                <form action="index.html" method="post">
-                    <input type="text" placeholder="Search" name="search" id="search">
-                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-                </form>
+            <div class="wrapper">
+                <div class="searchbar">
+                    <form action="index.html" method="post">
+                        <input type="text" placeholder="Search" name="search" id="search">
+                        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="menu">
+                    <img class="primelogo" src="images/logo-nav.png" alt="clinnipets logo-nav">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-            <div class="menu">
-                <img class="primelogo" src="images/logo-nav.png" alt="clinnipets logo-nav">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            
         </div>
         <!-- navigation list when click the hamburger menu -->
         <!-- <div class="navigation">
@@ -50,7 +51,7 @@
                 </ul>
             </nav>
         </div> -->
-        <div class="navigation">
+        <div class="navigation wrapper">
             <label for="toggler"><i class="fa fa-bars"></i></label>
             <input type="checkbox" id="toggler">
             
@@ -148,25 +149,31 @@
                     <p>MON-SUN:</p>
                     <p>10: 00 am - 10: 00 pm</p>
                 </div>
-                <img src="images/logo-footer.png" alt="logo-footer">  
+                <img class="footerlogo1" src="images/logo-footer.png" alt="logo-footer">  
             </div>   
         </div>
     </div>
 
     <!-- insert google map -->
-    <div>
+    <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044936!2d-75.75712548465943!3d45.34993154908222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1680820783604!5m2!1szh-CN!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- booking buttons -->
-    <div class="wrapper">
-        <button>BOOK AN APPOINTMENT</button>
-        <button>Online</button>
-        <button>In Person</button>
+    <div class="appointment">
+        <div class="wrapper">
+            <div class="book">
+                <button>BOOK AN APPOINTMENT</button>
+            </div>
+            <div class="waytobook">
+                <button>Online</button>
+                <button>In Person</button>
+            </div>
+        </div>
     </div>
     <!-- social media links -->
     <div class="wrapper footernav">
-        <div class="footernav">
+        <div class="sns">
             <h3>Connect With Us</h3>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-square-twitter"></i>
@@ -174,28 +181,36 @@
         </div>
         <!-- navigation in the end -->
         <div>
-            <ul>
-                <li>Our Services</li>
-                <li>Contact Us</li>
-                <li>Our Team</li>
-                <li>Appointments</li>
-                <li>Emergency Form</li>
-                <li>Privacy</li>
+            <ul class="otherlinks">
+                <div class="box1">
+                    <li>Our Services</li>
+                    <li>Our Team</li>
+                    <li>Emergency Form</li>
+                </div>
+                <div class="box2">
+                    <li>Contact Us</li>
+                    <li>Appointments</li>                
+                    <li>Privacy</li>
+                </div> 
             </ul>
         </div>
     </div>
-    <footer class="wrapper">
-        <p>&copy; Copyright Clinnepets all rights reserved.</p>
-        <nav>
-            <ul>
-                <li>Cookie Notice</li>
-                <li>Privacy Policy</li>
-                <li>Terms of Use</li>
-                <li>Text Appts</li>
-                <li>Web Accessibility</li>
-            </ul>
-        </nav>
-        <img src="images/logo-footer.png" alt="footer logo">
+    <footer>
+        <div class="wrapper foot">
+            <div class="copyright">
+                <p>&copy; Copyright Clinnepets all rights reserved.</p>
+                <nav>
+                    <ul>
+                        <li>Cookie Notice</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Text Appts</li>
+                        <li>Web Accessibility</li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="images/logo-footer.png" alt="footer logo">
+        </div>
     </footer>
 </body>
 </html>
