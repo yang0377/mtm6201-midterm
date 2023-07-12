@@ -87,3 +87,10 @@ h3 {
 body p {
     color: var(--body-color);
 }
+
+/* style the home page */
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
