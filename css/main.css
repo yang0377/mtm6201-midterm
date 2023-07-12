@@ -133,52 +133,48 @@ body p {
     border-bottom-right-radius: 5px;
 }
 
-.primelogo {
+.logo {
     width: 117px;
     height: 98px;
 }
 
-.menu {
+.navlogo {
     display: flex;
     justify-content: space-between;
 }
 
-.fa-bars {
-    color: var(--body-color);
+/* style the hamburger menu */
+.bannercontainer {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    
 }
-
-*::after, *::before {
-    box-sizing: border-box;
-}
-
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.navigation nav {
+.container nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-family: sans-serif;
+    padding: 15px;
+    /* background: var(--secondary-color); */
+}
+
+.menu {
     background: var(--secondary-color);
 }
 
-nav a {
+.container nav a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
-.navigation nav ul {
+.list {
     display: flex;
+    /* display: contents; */
     list-style: none;
-    gap: 1.5rem;
+    gap:10px;
 }
 
 #toggler, label {
@@ -186,21 +182,23 @@ nav a {
 }
 
 label i {
-    color: white;
+    color: #fff;
 }
-@media screen and (max-width: 560px){
-    .navigation nav {
-        width: 50%;
+
+@media screen and (max-width: 650px) {
+    .menu {
+        width: 100%;
         max-height: 0;
         overflow: hidden;
     }
 
     label {
-        display: inline-flex;
+        display: inline-flex; 
     }
 
-    #toggler:checked~.navigation nav{
+    #toggler:checked~.menu {
         max-height: 100%;
+        /* max-width: 50%; */
     }
 
     .list{
@@ -209,6 +207,7 @@ label i {
         padding: 20px;
     }
 }
+
 
 /* style the home page */
 /* style the cover images of home page */
@@ -266,20 +265,21 @@ label i {
     position: absolute;
 }
 /* create animation to the play button */
+/* resource:https://www.youtube.com/watch?v=jlErVvA_T5I */
 @keyframes shining {
     0% {
         opacity: .1;
-        scale: 1;
+        transform: scale(1); 
     }
 
     50% {
         opacity: .8;
-        scale: .5;
+        transform: scale(.5);
     }
 
     100% {
         opacity: .1;
-        scale: 1;
+        transform: scale(1);
     }
 }
 
@@ -399,8 +399,6 @@ label i {
 .testimonials {
     padding: 10px;
     margin: 20px 0;
-    /* border-top: 1px solid var(--body-color); */
-    /* border-bottom: 1px solid var(--body-color); */
 }
 
 .testimonials h1 {
