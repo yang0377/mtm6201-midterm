@@ -88,9 +88,44 @@ body p {
     color: var(--body-color);
 }
 
-/* style the home page */
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1200px;
 }
+
+/* style the navigation */
+.headcontainer {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+}
+
+.languagebar {
+    width: 100%;
+}
+
+.searchbar {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.searchbar form input {
+    width: 50%;
+    height: 24px;
+    border: none;
+    margin-right: -4px;
+}
+
+.fa-magnifying-glass {
+    background-color: #60B5B4;
+    color: white;
+    padding: 4px;
+}
+
+
+
+
