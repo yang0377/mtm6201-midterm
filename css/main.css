@@ -318,12 +318,12 @@ label i {
 .play-btn::before {
     content: "";
     position: absolute;
-    border: 15px solid #fff;
+    border: 5px solid #fff;
     border-radius: 50%;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
+    /* top: -20px; */
+    /* left: -20px; */
+    /* right: -20px; */
+    /* bottom: -20px; */
     animation: bloom1 1.5s linear infinite;
     opacity: 0;
     z-index: 1;
@@ -346,13 +346,13 @@ label i {
 
 .play-btn:hover{
     animation-name: pulse;
-    animation-duration: 1s;
+    animation-duration: 1.9s;
     animation-iteration-count: infinite;
 }
 
 .play-btn:active {
     animation-name: shining;
-    animation-duration: 1s;
+    animation-duration: 1.9s;
     animation-iteration-count: 1;
 }
 
@@ -362,10 +362,6 @@ label i {
     text-align: center;
     margin: 20px 0;
     font-size: 50px;
-    width: 100px;
-    height: 100px;
-    z-index: 2;
-    border-radius: 100%;
 }
 
 .believe .wrapper p {
@@ -390,7 +386,6 @@ label i {
     margin-top: 40%;
     margin-left: 60%;
     line-height: 2rem;
-
 }
 
 /* style the testimonials */
