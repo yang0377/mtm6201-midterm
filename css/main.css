@@ -615,11 +615,42 @@ footer nav li {
     justify-content: center;
 }
 
+.who h1 {
+    color: var(--secondary-color);
+}
+
 .who p {
+    line-height: 2rem;
     padding: 10px 20px; 
 }
 
-/* style the story section with flex */
+/* style the story section with grid */
 .story {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-left: 20px;
+    margin: 10px 0;
 }
+
+.storycontainer h1 {
+    color: var(--secondary-color);
+}
+
+.storytext p {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+/* style the why section with grid */
+.why h1 {
+    color: var(--secondary-color);
+}
+
+.why p {
+    line-height: 2rem;
+}
+
+.whycontainer
+
