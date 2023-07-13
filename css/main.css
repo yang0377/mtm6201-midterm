@@ -780,3 +780,15 @@ footer nav li {
     border-radius: 9999px;
     margin-top: 20px;
 }
+
+.send button:hover {
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.send button:active {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
