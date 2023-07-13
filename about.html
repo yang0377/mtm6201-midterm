@@ -15,35 +15,43 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="wrapper headcontainer">
-        <!-- add the elements of navigation of the home page -->
+    <header class="headcontainer">
+        <!-- establish the elements of navigation of the home page -->
         <div class="container">
             <img class="languagebar" src="images/header-icon.png" alt="language icon">
-            <div class="searchbar">
-                <form action="index.html" method="post">
-                    <input type="text" placeholder="Search" name="search" id="search">
-                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-                </form>
-            </div>
-            <div class="menu">
-                <img class="primelogo" src="images/logo-nav.png" alt="clinnipets logo-nav">
-                <i class="fa-solid fa-bars"></i>
+            <div class="wrapper">
+                <div class="searchbar">
+                    <form action="index.html" method="post">
+                        <input type="text" placeholder="Search" name="search" id="search">
+                        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="bannercontainer">
+                    <div class="navlogo">
+                        <img class="logo" src="images/logo-nav.png" alt="clinnipets logo-nav">
+                    </div>
+                    <!-- creat the hamburger menu -->
+                    <nav>
+                        <a href="images/logo-nav.png"></a>
+                        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+                        <input type="checkbox" id="toggler" name="toggler">
+                        <div class="menu">
+                            <ul class="list">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav>
+                </div>
             </div>
         </div>
-        <!-- creat the navigation list -->
-        <nav>
-            <ul class="dropdown">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <div>
         <h1>About Us</h1>
@@ -102,22 +110,26 @@
             </div>
         </div>
 
-        <!-- customer's feedback -->
-        <div class="wrapper">
-            <h1>Customers Love Us!</h1>
-            <div>
-                <h2>Abi:</h2>
-                <p>I'm so glad I found this clinic. They were able to diagnose and treat my pet's health issue quickly and effectively.</p>
+        <!-- customers' feedback -->
+        <div class="testimonials">
+            <div class="wrapper">
+                <h1>Customers Love Us!</h1>
+                <div class="comments">
+                    <div class="com com1">
+                        <h2>Abi:</h2>
+                        <p>I'm so glad I found this clinic. They were able to diagnose and treat my pet's health issue quickly and effectively.</p>
+                    </div>
+                    <div class="com com2">
+                        <h2>Abi:</h2>
+                        <p>I'm so glad I found this clinic. They were able to diagnose and treat my pet's health issue quickly and effectively.</p>
+                    </div> 
+                </div>               
             </div>
-            <div>
-                <h2>Abi:</h2>
-                <p>I'm so glad I found this clinic. They were able to diagnose and treat my pet's health issue quickly and effectively.</p>
-            </div>               
         </div>
 
         <!-- social media links -->
-        <div class="wrapper">
-            <div>
+        <div class="wrapper footernav">
+            <div class="sns">
                 <h3>Connect With Us</h3>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-square-twitter"></i>
@@ -125,29 +137,36 @@
             </div>
             <!-- navigation in the end -->
             <div>
-                <ul>
-                    <li>Our Services</li>
-                    <li>Contact Us</li>
-                    <li>Our Team</li>
-                    <li>Appointments</li>
-                    <li>Emergency Form</li>
-                    <li>Privacy</li>
-                </ul>
+                <div class="otherlinks">
+                    <ul class="box1">
+                        <li>Our Services</li>
+                        <li>Our Team</li>
+                        <li>Emergency Form</li>
+                    </ul>
+                    <ul class="box2">
+                        <li>Contact Us</li>
+                        <li>Appointments</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <footer class="wrapper">
-            <p>&copy; Copyright Clinnepets all rights reserved.</p>
-            <nav>
-                <ul>
-                    <li>Cookie Notice</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Use</li>
-                    <li>Text Appts</li>
-                    <li>Web Accessibility</li>
-                </ul>
-            </nav>
-            <img src="images/logo-footer.png" alt="footer logo">
+        <footer>
+            <div class="wrapper foot">
+                <div class="copyright">
+                    <p>&copy; Copyright Clinnepets all rights reserved.</p>
+                    <nav>
+                        <ul>
+                            <li>Cookie Notice</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Use</li>
+                            <li>Text Appts</li>
+                            <li>Web Accessibility</li>
+                        </ul>
+                    </nav>
+                </div>
+                <img src="images/logo-footer.png" alt="footer logo">
+            </div>
         </footer>
     </div>
 </body>
