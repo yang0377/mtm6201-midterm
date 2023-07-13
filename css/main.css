@@ -475,6 +475,7 @@ label i {
 
 iframe {
     width: 100%;
+    height: 200px;
 }
 
 /* style the appointment section */
@@ -489,7 +490,6 @@ iframe {
 .appointment button {
     border: none;
     border-radius: 9999px;
-
 }
 
 .book button {
@@ -643,14 +643,105 @@ footer nav li {
     padding-bottom: 10px;
 }
 
-/* style the why section with grid */
+/* style the why section */
 .why h1 {
     color: var(--secondary-color);
+    padding: 50px 0;
 }
 
 .why p {
     line-height: 2rem;
 }
 
-.whycontainer
+/* style the why section with grid */
+.whycontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.wbox1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+}
+
+.wbox2 {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+}
+
+.wbox3 {
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+}
+
+.wbox1, .wbox2, .wbox3 {
+    background: var(--secondary-bg-color);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.wbox1 {
+    padding: 25px;
+}
+
+.wbox2, .wbox3 {
+    height: 80%;
+}
+
+.whycontainer img {
+    border-radius: 10px;
+}
+
+/* style the contact page */
+.contactcontainer {
+    margin: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contactform{
+    /* display: inline-block; */
+    width: 40%;
+    margin: 10px auto;
+
+}
+
+.contactcontainer form label,
+.contactcontainer form input, 
+.contactcontainer form select,
+.contactcontainer form 
+{
+    text-align: left;
+    display: block;
+    color: var(--body-color);
+    padding: 2px;
+}
+
+.contactcontainer form select {
+    height: 22px;
+}
+
+.contactcontainer .inform {
+    font-size: .9rem;
+}
+
+.privacy {
+    font-size: .6rem;
+}
+
+/* style the send button */
+.send button {
+    height: 30px;
+    width: 200px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 9999px;
+    margin-top: 20px;
+}
+
 

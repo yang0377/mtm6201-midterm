@@ -70,6 +70,12 @@
             </div>   
         </div>
     </div>
+
+    <!-- insert google map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044936!2d-75.75712548465943!3d45.34993154908222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1680820783604!5m2!1szh-CN!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <!-- booking buttons -->
     <div class="appointment">
         <div class="wrapper">
@@ -83,42 +89,59 @@
         </div>
     </div>
     <!-- contact form -->
-    <div class="wrapper">
-        <p>Please use this form to send us an email. Please do not use this form for urgent matters. If you require immediate attention or have an emergency, please call us.</p>
+    <div class="wrapper contactcontainer">
+        <p class="inform">Please use this form to send us an email. Please do not use this form for urgent matters. If you require immediate attention or have an emergency, please call us.</p>
         <form action="thanks.html" method="post" class="contactform">
-            <label for="firstname">First Name</label>
-            <input type="text"  name="firstname" id="firstname" required>
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text"  name="firstname" id="firstname" required>
+            </div>
+            
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div>
 
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" required>
-
-            <label for="help">What can we help you with?</label>
-            <select id="help" name="help">
-                <option value="regularexam">Regular Exam</option>
-                <option value="emergency">Emergency</option>
-                <option value="otherissues">Other Issues</option>
-              </select>
-
-            <label for="emailaddress">Email Address</label>
-            <input type="text" name="emailaddress" id="emailaddress">
-
-            <label for="phone">Phone</label>
-            <input type="text" name="phone" id="phone">
-
-            <label for="postalcode">Postal Code</label>
-            <input type="text" name="postalcode" id="postalcode">
-
-            <label for="waytocontact">How would you like us to contact you?</label>
-            <select name="waytocontact" id="waytocontact">
-                <option value="contactemail">Email</option>
-                <option value="contactphone">Phone</option>
-            </select>
-            <label for="message">Message</label>
-            <textarea id="message"></textarea>
+            <div>
+                <label for="help">What can we help you with?</label>
+                <select id="help" name="help">
+                    <option value="regularexam">Regular Exam</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="otherissues">Other Issues</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="emailaddress">Email Address</label>
+                <input type="text" name="emailaddress" id="emailaddress">
+            </div>
+            
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            
+            <div>
+                <label for="postalcode">Postal Code</label>
+                <input type="text" name="postalcode" id="postalcode">
+            </div>
+            
+            <div>
+                <label for="waytocontact">How would you like us to contact you?</label>
+                <select name="waytocontact" id="waytocontact">
+                    <option value="contactemail">Email</option>
+                    <option value="contactphone">Phone</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </div> 
         </form>
-        <p>We respect your privacy and will not share your information with other parties. For more information, see the VCA Canada Privacy Policy.</p>
+        <p class="privacy">We respect your privacy and will not share your information with other parties. For more information, see the VCA Canada Privacy Policy.</p>
         <!-- submit the form button -->
-        <div>
+        <div class="send">
             <button type="submit">Send Message</button>
         </div>
     </div>
