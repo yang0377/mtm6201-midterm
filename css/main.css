@@ -98,6 +98,10 @@ body p {
     text-align: left;
 }
 
+img {
+    width: 100%;
+}
+
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
@@ -208,7 +212,7 @@ label i {
     }
 
     label {
-        display: inline-flex; 
+        display: inline-block; 
     }
 
     #toggler:checked~.menu {
@@ -570,10 +574,52 @@ footer nav li {
 }
 
 /* style the about page */
-.slogan {
-    
+/* put the text on top of the image */
+.aboutposter {
+    position: relative;
 }
 
+.aboutposter h2 {
+    /* z-index: 2; */
+    position: absolute;
+    top: 10%;
+}
 
+.care {
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* line-height: 2rem; */
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    width: 60%;
+    margin-top: 80%;
+    margin-left: 40%;
+    line-height: 2rem;
+}
 
+.aboutposter img {
+    width: 100%;
+}
 
+/* put the play icon on top of the video image */
+.aboutvideo img {
+    width: 100%;  
+}
+
+.aboutvideo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.who p {
+    padding: 10px 20px; 
+}
+
+/* style the story section with flex */
+.story {
+    display: flex;
+}
