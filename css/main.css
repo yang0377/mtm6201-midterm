@@ -146,6 +146,14 @@ img {
     border-bottom-right-radius: 5px;
 }
 
+/* add hover animation to the search icon */
+.fa-magnifying-glass:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
 .logo {
     width: 117px;
     height: 98px;
@@ -156,7 +164,7 @@ img {
     justify-content: space-between;
 }
 
-/* style the hamburger menu */
+/* style the dropdown hamburger menu */
 .bannercontainer {
     display: flex;
     justify-content: space-between; 
@@ -203,7 +211,7 @@ img {
 label i {
     color: #fff;
 }
-
+/* add mediaquary */
 @media screen and (max-width: 650px) {
     .menu {
         width: 100%;
@@ -500,6 +508,34 @@ iframe {
     font-size: .8rem;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: .5;
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.book button:hover {
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.book button:active {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 .waytobook button {

@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -55,12 +57,13 @@
     <!-- the main content of the page -->
     <div class="cover">
         <div class="homeposter">
-            <img src="images/home-1.jpg" alt="photo of a woman holding a dog"
-            srcset="images/home-1-960_x_638.png 540vw,
-            images/home-1-1920_x_1276.png 720vw"
-            sizes="
-                (min-width: 960px) 720px,100vw"
-            >
+            <img 
+                srcset="images/home-1-960_x_638.png 960vw, 
+                        images/home-1-1920_x_1276.png 1920vw"
+                sizes="(min-width: 650px) 960px, 
+                        (min-width: 1200px) 1920px"
+                src="images/home-1.jpg"
+                alt="photo of a woman holding a dog">
             <div class="wrapper">
                 <p>Where your Pet's Health is Our Top Priority</p>
                 <p></p>
@@ -70,12 +73,13 @@
         <div class="video">
             <p class="wrapper">We provide exceptional care for your pets</p>
             <div class="videocard" >
-                <img src="images/home-2.jpg" alt="photo of a vetarin examing a dog"
-                srcset="images/home-2-960_x_638.png 540vw,
-                images/home-2-1920_x_1276.png 720vw"
-                sizes="
-                (min-width: 960px) 720px,100vw"
-                >
+                <img
+                    srcset="images/home-2-960_x_638.png 960vw,
+                            images/home-2-1920_x_1276.png 1920vw"
+                    sizes="(max-width: 650px) 960px,
+                            (max-width: 1200px) 1920px"
+                    src="images/home-2.jpg" 
+                    alt="photo of a vetarin examing a dog">
                 <div class="play-btn">
                     <i class="fa-solid fa-play"></i>
                 </div>
@@ -91,12 +95,15 @@
         </div>
         <div class="card1">
             <p>Pets of registered users can get a free wellness exam and a 50% discount is available when inviting friends.</p>
-            <img src="images/home-3.jpg" alt="a photo of a happy dog"
-            srcset="images/home--960_x_638.png 540vw,
-            images/home-3-1920_x_1276.png 720vw"
-            sizes="
-                (min-width: 960px) 720px,100vw"
-            >
+            <img 
+                srcset="
+                    images/home--960_x_638.png 960vw,
+                    images/home-3-1920_x_1276.png 1920vw"
+                sizes="
+                    (min-width: 650px) 960px,
+                    (min-width: 1200px) 1920px"
+                src="images/home-3.jpg" 
+                alt="a photo of a happy dog">
         </div>
     </div>
 
