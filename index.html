@@ -58,29 +58,24 @@
     <!-- the main content of the page -->
     <div class="cover" role="region">
         <div class="homeposter">
-            <img 
-                srcset="images/home-1-960_x_638.png 960vw, 
-                        images/home-1-1920_x_1276.png 1920vw"
-                sizes="(min-width: 650px) 960px, 
-                        (min-width: 1200px) 1920px"
-                src="images/home-1.jpg"
-                alt="photo of a woman holding a dog">
-            <div class="wrapper">
+            <picture>
+                <source srcset="images/home-1-1920_x_1276.png" media="(min-width: 1080px)">
+                <source srcset="images/home-1-960_x_638.png" media="(max-width: 430px)">
+                <img src="images/home-1-960_x_638.png" alt="logo">
+            </picture>
+            <div>
                 <p>Where your Pet's Health is Our Top Priority</p>
-                <p></p>
-            </div>
+            </div>    
         </div>
         <!-- video seciton -->
         <div class="video" id="maincontent">
             <p class="wrapper">We provide exceptional care for your pets</p>
             <div class="videocard" >
-                <img
-                    srcset="images/home-2-960_x_638.png 960vw,
-                            images/home-2-1920_x_1276.png 1920vw"
-                    sizes="(max-width: 650px) 960px,
-                            (max-width: 1200px) 1920px"
-                    src="images/home-2.jpg" 
-                    alt="photo of a vetarin examing a dog">
+                <picture>
+                    <source srcset="images/home-2-1920_x_1920.png" media="(min-width: 1080px)">
+                    <source srcset="images/home-2-960_x_960.png" media="(max-width: 430px)">
+                    <img src="images/home-2-960_x_960.png" alt="logo">
+                </picture>
                 <div class="play-btn">
                     <i class="fa-solid fa-play"></i>
                 </div>
@@ -96,15 +91,11 @@
         </div>
         <div class="card1">
             <p>Pets of registered users can get a free wellness exam and a 50% discount is available when inviting friends.</p>
-            <img 
-                srcset="
-                    images/home--960_x_638.png 960vw,
-                    images/home-3-1920_x_1276.png 1920vw"
-                sizes="
-                    (min-width: 650px) 960px,
-                    (min-width: 1200px) 1920px"
-                src="images/home-3.jpg" 
-                alt="a photo of a happy dog">
+            <picture>
+                <source srcset="images/home-3-1920_x_2880.png" media="(min-width: 1080px)">
+                <source srcset="images/home-3-960_x_1440.png" media="(max-width: 430px)">
+                <img src="images/home-3-960_x_1440.png" alt="logo">
+            </picture>
         </div>
     </div>
 

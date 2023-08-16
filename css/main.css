@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* set the base style for all rem units to follow on mobile version */
+/* set the base style for all units to follow on mobile version */
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -210,29 +210,6 @@ img {
 
 label i {
     color: #fff;
-}
-/* add mediaquary */
-@media screen and (max-width: 650px) {
-    .menu {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    label {
-        display: inline-block; 
-    }
-
-    #toggler:checked~.menu {
-        max-height: 100%;
-    }
-
-    .list{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        background: none;
-    }
 }
 
 /* style the home page */
@@ -440,7 +417,7 @@ label i {
 
 .com {
     background-color: var(--tertiary-color);
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     border: 1px solid #fff;
     border-radius: 10%;
@@ -527,9 +504,10 @@ iframe {
 }
 
 .book button:hover {
-    animation-name: flash;
+    /* animation-name: flash;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+    opacity: .5;
 }
 
 .book button:active {
@@ -742,6 +720,10 @@ footer nav li {
     width: 40%;
     margin: 10px auto;
 
+}
+
+.addresstext ul li{
+    text-align: left;
 }
 
 .contactcontainer form label,
