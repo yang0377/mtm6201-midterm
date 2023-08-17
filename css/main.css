@@ -195,7 +195,6 @@ img {
 
 .list {
     display: flex;
-    /* display: contents; */
     list-style: none;
     gap:10px;
 }
@@ -242,7 +241,9 @@ label i {
     font-weight: bold;
     color: var(--primary-color);
     text-align: center;
-    margin:30px 0;
+    /* margin:30px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* style the video image and button */
@@ -710,29 +711,30 @@ footer nav li {
 }
 
 /* style the contact page */
+.addresstext ul li{
+    text-align: left;
+}
+
 .contactcontainer {
-    margin: 10px 30px;
+    margin: 10px auto;
     font-family: 'Open Sans', sans-serif;
 }
 
-.contactform{
-    /* display: inline-block; */
-    width: 40%;
+.contactform {
     margin: 10px auto;
-
-}
-
-.addresstext ul li{
-    text-align: left;
+    max-width: 30vw;
 }
 
 .contactcontainer form label,
 .contactcontainer form input, 
 .contactcontainer form select,
-.contactcontainer form 
-{
+.contactcontainer form textarea
+{   
+    justify-content: left;
     text-align: left;
-    display: block;
+    align-items: flex-start;
+    display: grid;
+    /* flex-wrap: wrap; */
     color: var(--body-color);
     padding: 2px;
 }
@@ -757,10 +759,11 @@ footer nav li {
     color: #fff;
     font-size: .8rem;
     font-weight: bold;
-    margin-bottom: 10px;
     border: none;
     border-radius: 9999px;
-    margin-top: 20px;
+    margin: 20px auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .send button:hover {
