@@ -550,7 +550,8 @@ iframe {
     text-align: left;
 }
 
-.otherlinks li {
+.otherlinks li a {
+    list-style: none;
     font-size: .8rem;
     color: var(--body-color);
     padding: 5px;
